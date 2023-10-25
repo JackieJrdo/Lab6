@@ -10,6 +10,15 @@ def encode (password):
 
     return encodedStr
 
+def decoder(encodedStr):
+    password = ''
+    for num in encodedStr:
+        num = int(num)
+        num -= 3
+        num = str(num)
+        password += num
+    return password
+
 
 if __name__ == '__main__':
     userOpt = 1
@@ -30,8 +39,7 @@ if __name__ == '__main__':
             print("Your password has been encoded and stored!")
             print("")
 
-        #if userOpt == 2:
-            #decode(ePass)
-            #print("The encoded password is " + ePass + ", and the original password is " + password + ".")
-            #print("")
+        elif userOpt == 2:
+            decoder(ePass)
+            print(f'The encoded password is {ePass}, and the original password is {password}.')
 

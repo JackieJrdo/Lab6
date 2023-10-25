@@ -16,3 +16,5 @@ if __name__ == '__main__':
     password = '12345555'
     p = encode(password)
     print(p)
+
+    print("hello test 2")

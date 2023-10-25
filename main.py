@@ -10,14 +10,6 @@ def encode (password):
 
     return encodedStr
 
-def menu():
-    print("Menu\n -------------\n 1. Encode\n 2. Decode\n 3. Quit\n")
-    userOpt = int(input("Please enter an option: "))
-    userPass = input("Please enter your password to encode: ")
-
-
-
-
 
 if __name__ == '__main__':
     userOpt = 1

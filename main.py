@@ -6,8 +6,7 @@ def encode (password):
         i = int(i)
         if i < 7:
             i += 3
-            i = str(i)
-            encodedStr += i
+            encodedStr += str(i)
         elif i >= 7:
             i += 3
             encodedStr += str(i)[-1]

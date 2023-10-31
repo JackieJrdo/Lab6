@@ -4,9 +4,13 @@ def encode (password):
 
     for i in password:
         i = int(i)
-        i += 3
-        i = str(i)
-        encodedStr += i
+        if i < 7:
+            i += 3
+            i = str(i)
+            encodedStr += i
+        elif i >= 7:
+            i += 3
+            encodedStr += str(i)[-1]
 
     return encodedStr
 
